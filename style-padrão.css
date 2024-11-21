@@ -123,13 +123,33 @@
 }
 
 body{
-    background: linear-gradient(to bottom, #17242F, #1f3141 50%, #273F51), 
-            url('data:image/png;base64,...'); /* Imagem de ruído em base64 */
+  background: linear-gradient(to bottom, #17242F, #1f3141 50%, #273F51), url('data:image/png;base64,...'); /* Imagem de ruído em base64 */
   background-blend-mode: overlay;
 }
 
-html {
-    height: 100vh;
+html, body {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento */
+  height: 100%; /* Garante que o body ocupe 100% da altura da tela */
+  width: 100%; /* Garante que o body ocupe 100% da largura da tela */
+  overflow-x: hidden; /* Bloqueia a rolagem horizontal */
+  overflow-y: auto; /* Permite rolagem vertical quando necessário */
 }
+
+header {
+  position: fixed; /* Fixa o header no topo da página */
+  top: 0;
+  left: 0;
+  width: 100%; /* O header ocupa toda a largura da tela */
+  height: 6em;
+  background-color: #192834; /* Cor de fundo (você pode mudar) */
+  z-index: 1000; /* Garante que o header fique acima do conteúdo */
+  padding: 10px 0; /* Ajuste de padding conforme necessário */
+  box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+}
+main{
+  margin: 200px 10px 10px 10px;
+}
+
 
 
