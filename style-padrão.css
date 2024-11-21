@@ -125,7 +125,6 @@
 body{
     background-image: linear-gradient(to bottom, #17242F, #273F51);
     min-height: 100vh;
-    border: 5px solid white;
 }
 
 html {
