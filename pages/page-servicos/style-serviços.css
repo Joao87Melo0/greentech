@@ -1,0 +1,100 @@
+main h1,p {
+    font-family: poppins;
+    color: white;
+}
+
+main p {
+    text-align: justify;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+
+section a {
+    opacity: 1;
+}
+
+@media (min-width: 768px){
+        main button {
+        border: none;
+        padding: 5px 10px;
+        width: 20vh;
+        border-radius: 3px;
+        font-size: 0.7em;
+        color: #fff;
+        background-color: #537704;
+        transition: 0.3s;
+    }
+
+        main button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    main h1{
+        font-size: 3em;
+        margin: 30px;
+    }
+
+    main p{
+        margin: 30px;
+    }
+
+    .p-descricao{
+        margin-top: -30px;
+        margin-left: 50px;
+        width: 40vw;
+    }
+
+    main{
+        display: flex;
+        align-items: center;
+    }
+
+    .sec-2{
+        width: 50%;
+    }
+
+    .informacao{
+        background-image: linear-gradient(to bottom, #CCCCCC, #42596B);
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        border-radius: 10px;
+        padding: 40px;
+    }
+
+    .info{
+        background-color: #ffffffad;
+        color: black;
+        margin: 30px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .info p{
+        color: black;
+        font-family: inter;
+    }
+
+    #info-1{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+    }
+
+    #info-1 p{
+        align-self: start;
+        justify-self: start;
+    }
+
+    .info img{
+        width: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .sec-1{
+        display: none;
+    }
+}

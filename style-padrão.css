@@ -127,6 +127,10 @@ body{
   background-blend-mode: overlay;
 }
 
+p{
+  line-height: 1.9;
+}
+
 html, body {
   margin: 0; /* Remove margens padrão */
   padding: 0; /* Remove preenchimento */
