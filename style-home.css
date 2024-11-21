@@ -79,7 +79,7 @@ button:hover{
     p{
         font-size: 0.7em;
         text-indent: 1em;
-        margin-top: 5px;
+        margin: 5px 10px 0px 10px;
     }
 
     main{
@@ -97,8 +97,8 @@ button:hover{
         display: block;
         margin: auto;
         border: none;
-        padding: 5px 15px;
-        width: 58vh;
+        padding: 5px 10px;
+        width: 50vh;
         border-radius: 3px;
         font-size: 0.7em;
         color: #fff;
