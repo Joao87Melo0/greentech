@@ -123,8 +123,9 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom, #17242F, #273F51);
-    min-height: 100vh;
+    background: linear-gradient(to bottom, #17242F, #1f3141 50%, #273F51), 
+            url('data:image/png;base64,...'); /* Imagem de ruído em base64 */
+  background-blend-mode: overlay;
 }
 
 html {
