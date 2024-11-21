@@ -148,7 +148,21 @@ header {
   box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
 }
 main{
-  margin: 200px 10px 10px 10px;
+  margin: 120px 10px 10px 10px;
+}
+
+footer{
+  margin-top: 40px;
+  opacity: 0.8;
+  width: 100%;
+  padding: 20px 0px 10px 0px;
+  display: flex;
+}
+
+footer p{
+  margin: auto;
+  font-weight: 300;
+  text-align: center;
 }
 
 
