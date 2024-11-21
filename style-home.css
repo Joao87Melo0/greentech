@@ -1,17 +1,18 @@
-main h1, p{
+main h1,
+p {
     font-family: poppins;
     color: white;
 }
 
-main p{
+main p {
     text-align: justify;
 }
 
-.title-2{
+.title-2 {
     color: #537704;
 }
 
-section a{
+section a {
     opacity: 1;
 }
 
@@ -19,81 +20,81 @@ section a{
 
 @media (min-width: 768px) {
 
-.title-1{
-    margin-top: 30px;
-}
+    .title-1 {
+        margin-top: 30px;
+    }
 
-main{
-    display: flex;
-}
+    main {
+        display: flex;
+    }
 
-main section img{
-    width: 500px;
-    height: 100vh;
-    margin: 0px -10px 0px 10px;
-    border-radius: 10px 0px 0px 10px;
-}
+    main section img {
+        width: 500px;
+        height: 100vh;
+        margin: 0px -10px 0px 10px;
+        border-radius: 10px 0px 0px 10px;
+    }
 
-h1{
-    font-size: 3em;
-    margin: 0px 20px 0px 20px;
-    font-weight: 500;
-}
+    h1 {
+        font-size: 3em;
+        margin: 0px 20px 0px 20px;
+        font-weight: 500;
+    }
 
-p{
-    margin: 20px;
-}
+    p {
+        margin: 20px;
+    }
 
-button{
-    margin: 20px;
-    border: none;
-    padding: 5px 15px;
-    border-radius: 3px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #537704;
-    transition: 0.3s;
-}
+    button {
+        margin: 20px;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 3px;
+        font-size: 1em;
+        color: #fff;
+        background-color: #537704;
+        transition: 0.3s;
+    }
 
-button:hover{
-    opacity: 0.8;
-    cursor: pointer;
-}
+    button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
 
-.title-2{
-    margin-bottom: 20px;
-}
+    .title-2 {
+        margin-bottom: 20px;
+    }
 
 }
 
 @media (max-width: 768px) {
-    h1{
+    h1 {
         font-size: 1em;
         margin-left: 20px;
     }
 
-    .title-2{
+    .title-2 {
         margin-bottom: 20px;
     }
 
-    p{
+    p {
         font-size: 0.7em;
         text-indent: 1em;
         margin: 5px 10px 0px 10px;
     }
 
-    main{
+    main {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px;
     }
 
-    .ultip{
+    .ultip {
         margin-bottom: 20px;
     }
 
-    button{
+    main button {
         display: block;
         margin: auto;
         border: none;
@@ -105,15 +106,17 @@ button:hover{
         background-color: #537704;
         transition: 0.3s;
     }
-    
-    button:hover{
+
+    main button:hover {
         opacity: 0.8;
         cursor: pointer;
     }
-    main section img{
+
+    main section img {
         width: 58vh;
         height: 50vh;
         margin: 40px 20px 20px 20px;
         border-radius: 10px;
     }
+
 }
