@@ -182,3 +182,8 @@ nav{
     }
 }
 
+@media (min-width: 769px) {
+    .close-nav {
+        display: none; /* Oculta o botão no desktop */
+    }
+}
