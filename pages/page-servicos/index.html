@@ -10,81 +10,102 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Adicionando as versões UMD do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database-compat.js"></script>
 </head>
-<body><div class="container">
-    <header>
-        <nav>
-            <a class="logo" href="../../index.html"><img class="logo" src="../../Logo/GreenTech_Growers_Logo_NoLine.png" alt=""></a>
-            <div class="nav-2">
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <ul class="nav-list">
-                    <button class="close-nav">X</button>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a class="a-especial" href="../page-servicos/index.html">Serviços</a></li>
-                    <li><a href="../page-sobre/index.html">Sobre</a></li>
-                    <li><a href="../page-contato/index.html">Contato</a></li>
-                </ul>                
-                <a href="../page-login/index.html"><img class="btn-login" src="../../icons/usuario.png" alt=""></a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="sec-1">
-            <h1>Controle a sua Estufa</h1>
-            <p><b>1. Temperatura (Celsius)</b></p>
-            <p class="p-descricao">
-                • Monitora o calor da estufa para evitar extremos que 
-                prejudicam as plantas. <br>
-                • O que fazer?
-                Ajuste ventilação ou aquecimento conforme os dados do sistema.
-            </p>
-            <p><b>2. Umidade  (Porcentagem)</b></p>
-            <p class="p-descricao">
-                • Controla os níveis de água no ar, garantindo um ambiente saudável. <br>
-                • O que fazer? Melhore a ventilação ou ajuste a irrigação com base nas medições.
-            </p>
-            <p><b>3. Luminosidade (Lux)</b></p>
-            <p class="p-descricao">
-                • Verifica a luz disponível para as plantas realizarem fotossíntese. <br>
-                • O que fazer? Ajuste iluminação artificial ou reposicione as plantas.
-            </p>
-        </section>
-        <section class="sec-2">
-            <div class="informacao">
-                <div class="info">
-                    <div id="info-1">
-                        <p>Temperatura</p>
-                        <img src="../../icons/idea.png" alt="">
+<body>
+    <script src="firebase-script.js"></script>
+    <script src="script-servicos.js"></script>
+    <div class="container">
+        <header>
+            <nav>
+                <a class="logo" href="../../index.html"><img class="logo" src="../../Logo/GreenTech_Growers_Logo_NoLine.png" alt=""></a>
+                <div class="nav-2">
+                    <div class="mobile-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
                     </div>
-                    <div></div>
-                    <div></div>
+                    <ul class="nav-list">
+                        <button class="close-nav">X</button>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a class="a-especial" href="../page-servicos/index.html">Serviços</a></li>
+                        <li><a href="../page-sobre/index.html">Sobre</a></li>
+                        <li><a href="../page-contato/index.html">Contato</a></li>
+                    </ul>                
+                    <a href="../page-login/index.html"><img class="btn-login" src="../../icons/usuario.png" alt=""></a>
                 </div>
-                <div class="info">
-                    <div id="info-1">
-                        <p>Umidade</p>
-                        <img src="../../icons/humidity.png" alt="">
+            </nav>
+        </header>
+        <main>
+            <section class="sec-1">
+                <h1>Controle a sua Estufa</h1>
+                <p><b>1. Temperatura (Celsius)</b></p>
+                <p class="p-descricao">
+                    • Monitora o calor da estufa para evitar extremos que 
+                    prejudicam as plantas. <br>
+                    • O que fazer?
+                    Ajuste ventilação ou aquecimento conforme os dados do sistema.
+                </p>
+                <p><b>2. Umidade  (Porcentagem)</b></p>
+                <p class="p-descricao">
+                    • Controla os níveis de água no ar, garantindo um ambiente saudável. <br>
+                    • O que fazer? Melhore a ventilação ou ajuste a irrigação com base nas medições.
+                </p>
+                <p><b>3. Luminosidade (Lux)</b></p>
+                <p class="p-descricao">
+                    • Verifica a luz disponível para as plantas realizarem fotossíntese. <br>
+                    • O que fazer? Ajuste iluminação artificial ou reposicione as plantas.
+                </p>
+            </section>
+            <section class="sec-2">
+                <div class="informacao">
+                    <div class="info">
+                        <div id="info-1">
+                            <p>Temperatura</p>
+                            <img class="icon-" src="../../icons/idea.png" alt="">
+                        </div>
+                        <div class="info-2">
+                            <h1 class="info-number" id="num-temp">24</h1>
+                            <h2 class="unit">°C</h2>
+                        </div>
+                        <div class="info-3">
+                            <img id="arrow" src="../../icons/right-arrow.png" alt="">
+                        </div>
                     </div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="info">
-                    <div id="info-1">
-                        <p>Luminosidade</p>
-                        <img src="../../icons/thermometer.png" alt="">
+                    <div class="info">
+                        <div id="info-1">
+                            <p>Umidade</p>
+                            <img class="icon-" src="../../icons/humidity.png" alt="">
+                        </div>
+                        <div class="info-2">
+                            <h1 class="info-number" id="num-umid">24</h1>
+                            <h2 class="unit">%</h2>
+                        </div>
+                        <div class="info-3">
+                            <img id="arrow2" src="../../icons/right-arrow.png" alt="">
+                        </div>
                     </div>
-                    <div></div>
-                    <div></div>
+                    <div class="info">
+                        <div id="info-1">
+                            <p>Luminosidade</p>
+                            <img class="icon-" src="../../icons/thermometer.png" alt="">
+                        </div>
+                        <div class="info-2">
+                            <h1 class="info-number" id="num-lumi">24</h1>
+                            <h2 class="unit">lx</h2>
+                        </div>
+                        <div class="info-3">
+                            <img id="arrow3" src="../../icons/right-arrow.png" alt="">
+                        </div>
+                    </div>
+                    <div><button onclick="reloadp()">Atualizar</button></div>
                 </div>
-                <div><button>Atualizar</button></div>
-            </div>
-        </section>
-    </main>
-    <footer><p>Copyright © GreenTech Growers 2024. Todos os direitos reservados.</p></footer>
-    <script src="../../mobile-navbar.js"></script>
-</div>
+            </section>
+        </main>
+        <footer><p>Copyright © GreenTech Growers 2024. Todos os direitos reservados.</p></footer>
+        <script src="../../mobile-navbar.js"></script>
+    </div>
 </body>
 </html>

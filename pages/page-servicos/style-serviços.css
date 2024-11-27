@@ -67,9 +67,11 @@ section a {
     .info{
         background-color: #ffffffad;
         color: black;
+        display: flex;
         margin: 30px;
-        padding: 5px;
         border-radius: 5px;
+        display: flex;
+        flex-direction: row;
     }
 
     .info p{
@@ -80,17 +82,66 @@ section a {
     #info-1{
         display: flex;
         flex-direction: column;
-        border: 1px solid black;
+        justify-content: start;
+        align-items: start;
+        width: 20%;
+        margin-left: 3px;
     }
 
     #info-1 p{
         align-self: start;
         justify-self: start;
+        margin: -1px;
+        font-family: inter;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .icon-{
+        margin-top: auto;
+        padding-bottom: 4px;
+    }
+
+    .info-number{
+        font-family: inter;
+        font-size: 4em;
+        color: #293B49;
+        font-weight: 400;
+        margin: 0.40em 0em 0.40em 0.60em;
+    }
+
+    .unit{
+        font-family: inter;
+        font-size: 2em;
+        color: #293B49;
+        font-weight: 400;
+        margin-left: 0.4em;
     }
 
     .info img{
         width: 20px;
     }
+
+    .info-2{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .info-3{
+        justify-self: end;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-3 img{
+        width: 80%;
+        opacity: 0;
+    }
+
 }
 
 @media (max-width: 768px){
