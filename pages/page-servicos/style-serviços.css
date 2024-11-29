@@ -1,4 +1,5 @@
-main h1,p {
+main h1,
+p {
     font-family: poppins;
     color: white;
 }
@@ -14,8 +15,8 @@ section a {
     opacity: 1;
 }
 
-@media (min-width: 768px){
-        main button {
+@media (min-width: 768px) {
+    main button {
         border: none;
         padding: 5px 10px;
         width: 20vh;
@@ -26,36 +27,36 @@ section a {
         transition: 0.3s;
     }
 
-        main button:hover {
+    main button:hover {
         opacity: 0.8;
         cursor: pointer;
     }
 
-    main h1{
+    main h1 {
         font-size: 3em;
         margin: 30px;
     }
 
-    main p{
+    main p {
         margin: 30px;
     }
 
-    .p-descricao{
+    .p-descricao {
         margin-top: -30px;
         margin-left: 50px;
         width: 40vw;
     }
 
-    main{
+    main {
         display: flex;
         align-items: center;
     }
 
-    .sec-2{
+    .sec-2 {
         width: 50%;
     }
 
-    .informacao{
+    .informacao {
         background-image: linear-gradient(to bottom, #CCCCCC, #42596B);
         display: flex;
         flex-direction: column;
@@ -64,7 +65,7 @@ section a {
         padding: 40px;
     }
 
-    .info{
+    .info {
         background-color: #ffffffad;
         color: black;
         display: flex;
@@ -74,12 +75,12 @@ section a {
         flex-direction: row;
     }
 
-    .info p{
+    .info p {
         color: black;
         font-family: inter;
     }
 
-    #info-1{
+    #info-1 {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -88,7 +89,7 @@ section a {
         margin-left: 3px;
     }
 
-    #info-1 p{
+    #info-1 p {
         align-self: start;
         justify-self: start;
         margin: -1px;
@@ -97,12 +98,12 @@ section a {
         font-size: 16px;
     }
 
-    .icon-{
+    .icon- {
         margin-top: auto;
         padding-bottom: 4px;
     }
 
-    .info-number{
+    .info-number {
         font-family: inter;
         font-size: 4em;
         color: #293B49;
@@ -110,7 +111,7 @@ section a {
         margin: 0.40em 0em 0.40em 0.60em;
     }
 
-    .unit{
+    .unit {
         font-family: inter;
         font-size: 2em;
         color: #293B49;
@@ -118,18 +119,18 @@ section a {
         margin-left: 0.4em;
     }
 
-    .info img{
+    .info img {
         width: 20px;
     }
 
-    .info-2{
+    .info-2 {
         display: flex;
         justify-self: center;
         align-items: center;
         margin: auto;
     }
 
-    .info-3{
+    .info-3 {
         justify-self: end;
         width: 20%;
         display: flex;
@@ -137,15 +138,15 @@ section a {
         align-items: center;
     }
 
-    .info-3 img{
+    .info-3 img {
         width: 80%;
         opacity: 0;
     }
 
 }
 
-@media (max-width: 768px){
-    .sec-1{
+@media (max-width: 768px) {
+    .sec-1 {
         display: none;
     }
 
@@ -160,11 +161,11 @@ section a {
         transition: 0.3s;
     }
 
-    .sec-2{
+    .sec-2 {
         width: 100%;
     }
 
-    .informacao{
+    .informacao {
         background-image: linear-gradient(to bottom, #CCCCCC, #42596B);
         display: flex;
         flex-direction: column;
@@ -173,7 +174,7 @@ section a {
         padding: 40px 10px 40px 10px;
     }
 
-    .info{
+    .info {
         background-color: #ffffffad;
         color: black;
         display: flex;
@@ -183,12 +184,12 @@ section a {
         flex-direction: row;
     }
 
-    .info p{
+    .info p {
         color: black;
         font-family: inter;
     }
 
-    #info-1{
+    #info-1 {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -197,7 +198,7 @@ section a {
         margin-left: 3px;
     }
 
-    #info-1 p{
+    #info-1 p {
         align-self: start;
         justify-self: start;
         margin: -1px;
@@ -206,12 +207,12 @@ section a {
         font-size: 16px;
     }
 
-    .icon-{
+    .icon- {
         margin-top: auto;
         padding-bottom: 4px;
     }
 
-    .info-number{
+    .info-number {
         font-family: inter;
         font-size: 4em;
         color: #293B49;
@@ -219,7 +220,7 @@ section a {
         margin: 0.40em 0em 0.40em 0.60em;
     }
 
-    .unit{
+    .unit {
         font-family: inter;
         font-size: 2em;
         color: #293B49;
@@ -227,18 +228,18 @@ section a {
         margin-left: 0.4em;
     }
 
-    .info img{
+    .info img {
         width: 20px;
     }
 
-    .info-2{
+    .info-2 {
         display: flex;
         justify-self: center;
         align-items: center;
         margin: auto;
     }
 
-    .info-3{
+    .info-3 {
         justify-self: end;
         width: 20%;
         display: flex;
@@ -246,7 +247,7 @@ section a {
         align-items: center;
     }
 
-    .info-3 img{
+    .info-3 img {
         width: 80%;
         opacity: 0;
     }

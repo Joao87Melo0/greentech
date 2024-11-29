@@ -1,0 +1,142 @@
+main h1,
+p {
+    font-family: poppins;
+    color: white;
+}
+
+main p {
+    text-align: justify;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+
+section a {
+    opacity: 1;
+}
+
+l{
+    color: #537704;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+
+    main h1{
+        margin: 20px 0px 40px 0px;
+    }
+
+    section{
+        background-image: linear-gradient(to bottom, #293B49, #42596B);
+        border-radius: 10px;
+    }
+
+    #info-principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .informacao{
+        background-color: hsla(0, 0%, 100%, 0.5);
+        margin: 20px 70px 70px 70px;
+        width: 400px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px 10px 10px 10px;
+    }
+
+    .info p{
+        color: #293B49;
+    }
+
+    .title-conta{
+        color: black;
+        font-weight: 400;
+    }
+
+    .final-contato{
+        margin: 20px 20px 40px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    main h1{
+        margin: 20px 0px 40px 0px;
+        font-size: 1.5em;
+    }
+
+    section{
+        background-color: #293b4900;
+        border-radius: 10px;
+    }
+
+    #info-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .informacao{
+        background-color: hsla(0, 0%, 100%, 0.5);
+        margin: 10px 20px 20px 20px;
+        width: 300px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px 10px 10px 10px;
+    }
+
+    .info p{
+        color: #293B49;
+        font-size: 0.9em;
+    }
+
+    .title-conta{
+        color: black;
+        font-weight: 400;
+        font-size: 0.9em;
+    }
+
+    .final-contato{
+        margin: 60px 0px 40px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .final-contato p{
+        width: 90%;
+        font-size: 0.8em;
+    }
+    
+}
