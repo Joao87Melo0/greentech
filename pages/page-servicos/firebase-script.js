@@ -23,21 +23,21 @@ const database = firebase.database();
 
 function startArrow(){
     if(ldr<ldr1){
+        document.getElementById("arrow3").style = "transform: rotate(90deg); opacity: 0.7;"
+    } else {
+        document.getElementById("arrow3").style = "transform: rotate(-90deg); opacity: 0.7;"
+    }
+
+    if(temperatura<temperatura1){
         document.getElementById("arrow").style = "transform: rotate(90deg); opacity: 0.7;"
     } else {
         document.getElementById("arrow").style = "transform: rotate(-90deg); opacity: 0.7;"
     }
 
-    if(temperatura<temperatura1){
+    if(umidade<umidade1){
         document.getElementById("arrow2").style = "transform: rotate(90deg); opacity: 0.7;"
     } else {
         document.getElementById("arrow2").style = "transform: rotate(-90deg); opacity: 0.7;"
-    }
-
-    if(umidade<umidade1){
-        document.getElementById("arrow3").style = "transform: rotate(90deg); opacity: 0.7;"
-    } else {
-        document.getElementById("arrow3").style = "transform: rotate(-90deg); opacity: 0.7;"
     }
 }
 
@@ -47,20 +47,12 @@ function startFirebase() {
     dbRef.once("value")
         .then((snapshot) => {
             if (snapshot.exists()) {
-                const oldLdr = ldr;
-                const oldTemperatura = temperatura;
-                const oldUmidade = umidade;
 
                 // Atualiza com os novos valores
                 ldr = snapshot.val().ldr;
                 temperatura = snapshot.val().temperatura;
                 umidade = snapshot.val().umidade;
-
-                // Atualiza as variáveis antigas para a próxima comparação
-                ldr1 = oldLdr;
-                temperatura1 = oldTemperatura;
-                umidade1 = oldUmidade;
-
+                
                 startArrow();
 
                 document.getElementById("num-temp").textContent = temperatura;
@@ -75,3 +67,11 @@ function startFirebase() {
         });
 }
 startFirebase();
+
+
+function atualiza() {
+    ldr1 = document.getElementById("num-lumi").textContent;
+    temperatura1 = document.getElementById("num-temp").textContent;
+    umidade1 = document.getElementById("num-umid").textContent;
+    startFirebase();
+}
